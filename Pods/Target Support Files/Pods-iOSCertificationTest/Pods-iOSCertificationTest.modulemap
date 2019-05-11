@@ -1,0 +1,6 @@
+framework module Pods_iOSCertificationTest {
+  umbrella header "Pods-iOSCertificationTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

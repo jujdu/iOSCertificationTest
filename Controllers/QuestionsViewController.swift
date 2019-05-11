@@ -77,6 +77,7 @@ class QuestionsViewController: UIViewController {
     }
     
     private func updateButtonsAndImage(using answers: [Answer]) {
+
         for index in 0..<min(buttonsCollection.count, answers.count) {
             buttonsCollection[index].setTitle(answers[index].text, for: .normal)
         }

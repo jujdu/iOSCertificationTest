@@ -25,30 +25,28 @@ class WelcomeViewController: UIViewController {
     
     private func setConstraintsToBottomView() {
         bottomView.translatesAutoresizingMaskIntoConstraints = false
-        let horizontalConstraint = bottomView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        let widthConstraint = bottomView.widthAnchor.constraint(equalToConstant: view.frame.size.width)
-        let heightConstraint = bottomView.heightAnchor.constraint(equalToConstant: view.frame.size.height / 2)
-        let bottomConstraint = bottomView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        NSLayoutConstraint.activate([horizontalConstraint,
-                                     widthConstraint,
-                                     heightConstraint,
-                                     bottomConstraint])
+        bottomView.centerXAnchor.constraint(equalTo: super.view.centerXAnchor).isActive = true
+        bottomView.widthAnchor.constraint(equalToConstant: super.view.frame.size.width).isActive = true
+        bottomView.heightAnchor.constraint(equalToConstant: view.frame.size.height / 2).isActive = true
+        bottomView.bottomAnchor.constraint(equalTo: super.view.bottomAnchor).isActive = true
     }
     
     private func setConstraintsToStackView() {
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        let horizontalConstraint = stackView.centerXAnchor.constraint(equalTo: bottomView.centerXAnchor)
-        let verticalConstraint = stackView.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor)
-        NSLayoutConstraint.activate([horizontalConstraint,
-                                     verticalConstraint])
+        stackView.centerXAnchor.constraint(equalTo: bottomView.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor).isActive = true
+        stackView.leftAnchor.constraint(equalTo: bottomView.leftAnchor, constant: 16.0).isActive = true
+        stackView.rightAnchor.constraint(equalTo: bottomView.rightAnchor, constant: -16.0).isActive = true
+//      let trailingConstraint =
+//        NSLayoutConstraint.activate([horizontalConstraint,
+//                                     verticalConstraint,
+//                                     leadingConstraint,
+//                                     trailingConstraint])
     }
     
     private func setConstraintToButton() {
         button.translatesAutoresizingMaskIntoConstraints = false
-        let heightConstraint = button.heightAnchor.constraint(equalToConstant: 40)
-        let widthConstraint = button.widthAnchor.constraint(greaterThanOrEqualToConstant: 250)
-        NSLayoutConstraint.activate([heightConstraint,
-                                     widthConstraint])
+        button.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) { }
