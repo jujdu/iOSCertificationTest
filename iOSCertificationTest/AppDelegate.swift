@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+    
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.barTintColor = #colorLiteral(red: 0.1592816412, green: 0.2316696942, blue: 0.308652848, alpha: 1)
+        
+//        let attributes = [NSAttributedString.Key.font: UIFont(name: "Futura", size: 18)!]
+//
+//        navigationBarAppearace.titleTextAttributes = attributes   <- doesn't work, don't understand why. Set by storyboard
+//        navigationBarAppearace.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
         return true
     }
 
@@ -40,7 +51,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

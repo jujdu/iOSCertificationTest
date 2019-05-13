@@ -16,6 +16,7 @@
 		6F5E7C25227F624E00D95154 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E7C24227F624E00D95154 /* WelcomeViewController.swift */; };
 		6F5E7C27227F625D00D95154 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E7C26227F625D00D95154 /* QuestionsViewController.swift */; };
 		6F5E7C29227F626500D95154 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E7C28227F626500D95154 /* ResultsViewController.swift */; };
+		C7C93EA8192D588E427E8ED1 /* Pods_iOSCertificationTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F929F2081BB848E27FE8AB3 /* Pods_iOSCertificationTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C93EA8192D588E427E8ED1 /* Pods_iOSCertificationTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +135,7 @@
 				6F1AD70B227F5F8C006A08CC /* Sources */,
 				6F1AD70C227F5F8C006A08CC /* Frameworks */,
 				6F1AD70D227F5F8C006A08CC /* Resources */,
+				D2F360582EF460B12338B393 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +193,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D2F360582EF460B12338B393 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSCertificationTest/Pods-iOSCertificationTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSCertificationTest/Pods-iOSCertificationTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F1D8687C81A2F66046F3FED3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

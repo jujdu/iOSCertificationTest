@@ -13,11 +13,17 @@ class ResultsViewController: UIViewController {
     //MARK: - @IBOutlets
     
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var lastResulLabel: UILabel!
+    @IBOutlet weak var bestResultLabel: UILabel!
     
     //MARK: - Properties
     
     var answers: [Answer] = []
     private static var countOfRightAnswers: Double = 0
+    private let defaults = UserDefaults.standard
+    private var lastResult = 0.0
+    private var bestResult = 0.0
+    
     
     //MARK: - UIViewController Methods
     
@@ -25,6 +31,13 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.hidesBackButton = true
+
+        self.navigationItem.rightBarButtonItem?.setTitleTextAttributes(
+            [NSAttributedString.Key.font: UIFont(name: "Futura", size: 17)!],
+            for: UIControl.State.normal)
+      
+        lastResulLabel.text = String(Int(defaults.double(forKey: "lastResult")))
+        bestResultLabel.text = String(Int(defaults.double(forKey: "bestResult")))
         
         knowResult(answers: answers)
     }
@@ -42,7 +55,13 @@ class ResultsViewController: UIViewController {
             }
         }
         
-        let result = (ResultsViewController.countOfRightAnswers / Double(answers.count)) * 100
-        resultLabel.text = "ur result is \(Int(result))%"
+        let currentResult = (ResultsViewController.countOfRightAnswers / Double(answers.count)) * 100
+        resultLabel.text = "ur result is \(Int(currentResult))%"
+        
+        defaults.set(currentResult, forKey: "lastResult")
+        
+        if currentResult > defaults.double(forKey: "bestResult") {
+            defaults.set(currentResult, forKey: "bestResult")
+        }
     }
 }

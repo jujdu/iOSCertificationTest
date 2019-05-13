@@ -3,10 +3,37 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "QuestionsViewController.init(coder:):QuestionsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "answersChosen">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "QuestionsViewController.questionIndex.getter:QuestionsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "answersChosen">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ResultsViewController.knowResult(answers:):ResultsViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "ResultsViewController.countOfRightAnswers">
+            </PersistentString>
+            <PersistentString
+               value = "bestResult">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "QuestionsViewController.questionIndex.modify:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "answersChosen">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
