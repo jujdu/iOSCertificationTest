@@ -16,7 +16,3 @@ struct Answer {
     var text: String
     var type: Bool //can change to Bool, 'cause only 2 cases
 }
-
-//enum AnswerType {
-//    case right, wrong
-//}
