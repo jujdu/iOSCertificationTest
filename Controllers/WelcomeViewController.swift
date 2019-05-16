@@ -21,11 +21,12 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         label.text = """
-        Do you want to be an iOS Developer?
-        Probably, you're struggle a lot, but you
-        don't feel that your knowledges become
-        better and better? Try this exam to check
-        your SKILLS.
+        Whazzup?? I made this application when
+        I knew about an iOS Developer exam.
+        Actually, it's a certification, but anyway...
+        I've got some inside info about questions
+        "types" and added this in my application.
+        So, try this exam to check your SKILLS.
         
         Good luck!
         """
@@ -68,7 +69,6 @@ class WelcomeViewController: UIViewController {
         stackView.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor).isActive = true
         stackView.leftAnchor.constraint(equalTo: bottomView.leftAnchor, constant: 16.0).isActive = true
         stackView.rightAnchor.constraint(equalTo: bottomView.rightAnchor, constant: -16.0).isActive = true
-//      let trailingConstraint =
 //        NSLayoutConstraint.activate([horizontalConstraint,
 //                                     verticalConstraint,
 //                                     leadingConstraint,
