@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5tA-pP-Dax">
-                                        <rect key="frame" x="12" y="56.999999999999993" width="301.33333333333331" height="97.333333333333329"/>
+                                        <rect key="frame" x="12" y="57" width="301.33333333333331" height="97.333333333333329"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to be an iOS Developer? " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ao-id-f8u">
@@ -304,7 +304,7 @@
                     <navigationItem key="navigationItem" title="Results" id="e5E-6t-wVc">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="czq-jy-4yC">
                             <connections>
-                                <segue destination="A7e-b1-WJu" kind="unwind" unwindAction="unwindWithSegue:" id="e31-Ze-Ap7"/>
+                                <segue destination="A7e-b1-WJu" kind="unwind" unwindAction="unwindWithSegue:" id="DZg-wC-oPa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -345,7 +345,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="18" width="850" height="584"/>
+        <image name="18" width="1000" height="584"/>
         <image name="launchImage" width="512" height="512"/>
     </resources>
 </document>

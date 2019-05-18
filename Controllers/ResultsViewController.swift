@@ -22,10 +22,10 @@ class ResultsViewController: UIViewController {
     
     var answers: [Answer] = []
     private static var countOfRightAnswers: Int = 0
-    private let defaults = UserDefaults.standard
     private var lastResult = 0
     private var bestResult = 0
     
+    private let defaults = UserDefaults.standard
     
     //MARK: - UIViewController Methods
     
