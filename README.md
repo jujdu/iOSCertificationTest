@@ -8,7 +8,7 @@ While I studied the Swift language, I heard about the certificate ["App Developm
 Also, I used some technologies just for studying, for example:
 1) programmatically gradient;
 2) programmatically constraints, like a half of view;
-3) Realm DB, but I just tried to connect my model by using the List<Answer> property, because I wanted to try one-to-many relationships. However, I haven't pushed it in fact that I didn't want to be Realm Cloud to store my data;
+3) Realm DB, but I just tried to connect my model by using the List<Answer> property, because I wanted to try one-to-many relationships. However, I haven't pushed it in fact that I didn't want to store my data by the Realm Cloud, because it's only 30 days for free;
 4) UserDefaults data.
   
 You can answer and then just go back by the cancel button. 
