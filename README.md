@@ -4,8 +4,7 @@ An application to help to pass iOS developer certification exam
 
 ![alt text](https://pp.userapi.com/c846324/v846324222/2048a2/934iucOpFlE.jpg)
 
-While I studied the Swift language, I heard about ["App Development with Swift Certification Level 1"](https://certiport.pearsonvue.com/Certifications/Apple/App-Dev-With-Swift/Overview). I've got a bit inside iformation, i.e. questions' types. This test must include simple questions about swift syntax and Xcode interface. So, I decided to make this application to help myself. Probably, there aren't all of possible questions in this application, but at least some of them.
-
+While I studied the Swift language, I heard about the certificate ["App Development with Swift Certification Level 1"](https://certiport.pearsonvue.com/Certifications/Apple/App-Dev-With-Swift/Overview). I've got a bit inside information, i.e. questions' types. This test must include simple questions about swift syntax and Xcode interface. So, I decided to make this application to help myself. Probably, there aren't all of possible questions in this application, but at least the biggest part of them.
 Also, I used some technologies just for studying, for example:
 1) programmatically gradient;
 2) programmatically constraints, like a half of view;
